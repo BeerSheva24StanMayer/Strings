@@ -1,6 +1,5 @@
 package telran.strings;
 
-import java.util.regex.Pattern;
 
 public class Strings {
     public static String firstName() {
@@ -15,6 +14,6 @@ public class Strings {
         // TODO
         // regular expression for testing synthax
         // of Java variable names
-        return "^((_|\\$)+[A-Za-z0-9]+)|^((?!.*^int$|.*^float$|.*^String$)([A-Za-z]+((\\$|\\w)+)?))";
+        return "^((?!.*^int$|.*^float$)(_|\\$|[A-Za-z])+((\\$|\\w)+)?)";
     }
 }
