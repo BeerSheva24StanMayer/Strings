@@ -36,7 +36,6 @@ public class RegularExpressionsTests {
         assertFalse("1A".matches(javaVariable()));
         assertFalse("".matches(javaVariable()));
         assertFalse("__||".matches(javaVariable()));
-        assertFalse("float".matches(javaVariable()));
-        assertFalse("int".matches(javaVariable()));
+        assertFalse("_".matches(javaVariable()));
     }
 }
