@@ -27,6 +27,7 @@ public class RegularExpressionsTests {
         assertTrue("int12".matches(javaVariable()));
         assertTrue("String_".matches(javaVariable()));
         assertTrue("___".matches(javaVariable()));
+        assertTrue("___123".matches(javaVariable()));
         assertTrue("$$$$".matches(javaVariable()));
 
         assertFalse("{___}".matches(javaVariable()));
