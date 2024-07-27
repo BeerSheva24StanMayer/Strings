@@ -19,11 +19,19 @@ public class RegularExpressionsTests {
         assertTrue("varnamE".matches(javaVariable()));
         assertTrue("var_n_ame".matches(javaVariable()));
         assertTrue("varname_$".matches(javaVariable()));
+        assertTrue("varNAme".matches(javaVariable()));
+        assertTrue("A".matches(javaVariable()));
+        assertTrue("A1".matches(javaVariable()));
+        assertTrue("_$$$$A1".matches(javaVariable()));
 
-        assertFalse("___".matches(javaVariable()));
-        assertFalse("varNAme".matches(javaVariable()));
+        assertFalse("___".matches(javaVariable()));       
         assertFalse("{___}".matches(javaVariable()));
         assertFalse("varname[_".matches(javaVariable()));
+        assertFalse("|".matches(javaVariable()));
+        assertFalse("1".matches(javaVariable()));
+        assertFalse("1A".matches(javaVariable()));
         assertFalse("".matches(javaVariable()));
+        assertFalse("__||".matches(javaVariable()));
+
     }
 }
