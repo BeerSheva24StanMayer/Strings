@@ -15,6 +15,6 @@ public class Strings {
         // TODO
         // regular expression for testing synthax
         // of Java variable names
-        return "^((_|\\$)+[A-Za-z0-9]+)|^([A-Za-z]+((_|\\$|\\w)+)?)";
+        return "^((_|\\$)+[A-Za-z0-9]+)|^((?!.*^int$|.*^float$|.*^String$)([A-Za-z]+((\\$|\\w)+)?))";
     }
 }

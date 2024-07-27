@@ -23,6 +23,10 @@ public class RegularExpressionsTests {
         assertTrue("A".matches(javaVariable()));
         assertTrue("A1".matches(javaVariable()));
         assertTrue("_$$$$A1".matches(javaVariable()));
+        assertTrue("floattt".matches(javaVariable()));
+        assertTrue("int12".matches(javaVariable()));
+        assertTrue("String_".matches(javaVariable()));
+
 
         assertFalse("___".matches(javaVariable()));       
         assertFalse("{___}".matches(javaVariable()));
@@ -32,6 +36,9 @@ public class RegularExpressionsTests {
         assertFalse("1A".matches(javaVariable()));
         assertFalse("".matches(javaVariable()));
         assertFalse("__||".matches(javaVariable()));
+        assertFalse("float".matches(javaVariable()));
+        assertFalse("int".matches(javaVariable()));
+        assertFalse("String".matches(javaVariable()));
 
     }
 }
